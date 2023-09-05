@@ -2,12 +2,14 @@ package com.hido.springwebapplication.dao;
 
 import com.hido.springwebapplication.models.Cart;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Repository
 public class cartDao {
+    @Autowired
     private SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sf){ this.sessionFactory =sf;}

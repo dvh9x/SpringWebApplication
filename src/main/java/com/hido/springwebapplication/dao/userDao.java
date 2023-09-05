@@ -12,6 +12,7 @@ import java.util.List;
 
 @Repository
 public class userDao {
+    @Autowired
 
     private SessionFactory sessionFactory;
 

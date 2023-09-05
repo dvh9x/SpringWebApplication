@@ -3,6 +3,7 @@ package com.hido.springwebapplication.dao;
 import com.hido.springwebapplication.models.Category;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Repository
 public class categoryDao {
-
+    @Autowired
     private SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sf) {
