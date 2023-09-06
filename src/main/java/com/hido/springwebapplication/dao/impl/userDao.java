@@ -1,5 +1,6 @@
-package com.hido.springwebapplication.dao;
+package com.hido.springwebapplication.dao.impl;
 
+import com.hido.springwebapplication.dao.IUserDao;
 import com.hido.springwebapplication.models.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -11,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public class userDao {
+public class userDao implements IUserDao {
     @Autowired
 
     private SessionFactory sessionFactory;

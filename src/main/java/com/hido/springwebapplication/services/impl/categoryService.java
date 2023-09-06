@@ -1,14 +1,15 @@
-package com.hido.springwebapplication.services;
+package com.hido.springwebapplication.services.impl;
 
+import com.hido.springwebapplication.dao.impl.categoryDao;
 import com.hido.springwebapplication.models.Category;
-import com.hido.springwebapplication.dao.categoryDao;
+import com.hido.springwebapplication.services.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class categoryService {
+public class categoryService implements ICategoryService {
     @Autowired
     private categoryDao categoryDao;
 

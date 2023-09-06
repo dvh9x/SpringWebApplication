@@ -1,13 +1,14 @@
-package com.hido.springwebapplication.services;
+package com.hido.springwebapplication.services.impl;
 
+import com.hido.springwebapplication.dao.impl.productDao;
 import com.hido.springwebapplication.models.Product;
-import com.hido.springwebapplication.dao.productDao;
+import com.hido.springwebapplication.services.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-public class productService {
+public class productService implements IProductService {
     @Autowired
     private productDao productDao;
 

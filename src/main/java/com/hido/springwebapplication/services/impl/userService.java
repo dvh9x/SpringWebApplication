@@ -1,14 +1,15 @@
-package com.hido.springwebapplication.services;
+package com.hido.springwebapplication.services.impl;
 
+import com.hido.springwebapplication.dao.impl.userDao;
 import com.hido.springwebapplication.models.User;
-import com.hido.springwebapplication.dao.userDao;
+import com.hido.springwebapplication.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class userService {
+public class userService implements IUserService {
     @Autowired
     private userDao userDao;
 

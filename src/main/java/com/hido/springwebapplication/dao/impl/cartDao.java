@@ -1,5 +1,6 @@
-package com.hido.springwebapplication.dao;
+package com.hido.springwebapplication.dao.impl;
 
+import com.hido.springwebapplication.dao.ICartDao;
 import com.hido.springwebapplication.models.Cart;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Repository
-public class cartDao {
+public class cartDao implements ICartDao {
     @Autowired
     private SessionFactory sessionFactory;
 

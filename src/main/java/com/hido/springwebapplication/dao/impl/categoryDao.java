@@ -1,5 +1,6 @@
-package com.hido.springwebapplication.dao;
+package com.hido.springwebapplication.dao.impl;
 
+import com.hido.springwebapplication.dao.ICategoryDao;
 import com.hido.springwebapplication.models.Category;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -10,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public class categoryDao {
+public class categoryDao implements ICategoryDao {
     @Autowired
     private SessionFactory sessionFactory;
 
