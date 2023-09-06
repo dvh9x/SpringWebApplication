@@ -25,20 +25,20 @@
                 th:src="@{/images/logo.png}" src="../static/images/logo.png"
                 width="auto" height="40" class="d-inline-block align-top" alt=""/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <button class="navbar-toggle" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggle-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li class="nav-item active"><a class="nav-link"
-                                               href="/adminhome">Home Page</a></li>
+                                               href="${pageContext.request.contextPath}/adminhome">Home Page</a></li>
                 <li class="nav-item active"><a class="nav-link"
-                                               href="/logout">Logout</a></li>
+                                               href="${pageContext.request.contextPath}/logout">Logout</a></li>
             </ul>
         </div>
     </div>
@@ -46,7 +46,7 @@
 <br>
 <div class="jumbotron container border border-info">
     <h3>Add a new Product</h3>
-    <form action="/admin/products/add" method="post">
+    <form action="${pageContext.request.contextPath}/admin/products/add" method="post">
         <div class="row">
             <div class="col-sm-5">
 
@@ -116,7 +116,7 @@
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
 <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        src="https://cdn.misdeliver.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script
@@ -124,8 +124,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var loadFile = function (event) {
-        var image = document.getElementById('imgPreview');
+    const loadFile = function (event) {
+        const image = document.getElementById('imgPreview');
         image.src = URL.createObjectURL(event.target.files[0]);
     };
 </script>

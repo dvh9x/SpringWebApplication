@@ -25,19 +25,19 @@
                 th:src="@{/images/logo.png}" src="../static/images/logo.png"
                 width="auto" height="40" class="d-inline-block align-top" alt=""/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <button class="navbar-toggle" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggle-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="/adminhome">Home
+                <li class="nav-item active"><a class="nav-link" href="${pageContext.request.contextPath}/adminhome">Home
                     Page</a></li>
-                <li class="nav-item active"><a class="nav-link" href="/logout">Logout</a>
+                <li class="nav-item active"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a>
                 </li>
             </ul>
         </div>
@@ -47,7 +47,7 @@
 <div class="container-fluid">
 
     <a style="margin: 20px 0" class="btn btn-primary"
-       href="/admin/products/add">Add Product</a><br>
+       href="${pageContext.request.contextPath}/admin/products/add">Add Product</a><br>
     <table class="table">
 
         <tr>
@@ -58,7 +58,7 @@
             <th scope="col">Quantity</th>
             <th scope="col">Price</th>
             <th scope="col">Weight</th>
-            <th scope="col">Descrption</th>
+            <th scope="col">Description</th>
             <th scope="col">Delete</th>
             <th scope="col">Update</th>
         </tr>
@@ -109,7 +109,7 @@
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
 <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        src="https://cdn.misdeliver.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script

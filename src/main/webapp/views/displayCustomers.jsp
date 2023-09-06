@@ -34,9 +34,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="/adminhome">Home
+                <li class="nav-item active"><a class="nav-link" href="${pageContext.request.contextPath}/adminhome">Home
                     Page</a></li>
-                <li class="nav-item active"><a class="nav-link" href="/logout">Logout</a>
+                <li class="nav-item active"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a>
                 </li>
             </ul>
         </div>
@@ -74,7 +74,7 @@
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
 <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        src="https://cdn.misdeliver.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script
